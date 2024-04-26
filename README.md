@@ -1,6 +1,5 @@
 A well-crafted README file is essential for introducing your project, explaining how to set it up, and demonstrating its functionality. Here's a template for a README for your blog application, including the cURL commands for your CRUD operations:
 
-```markdown
 # Go Blog Application
 
 This repository contains the code for a simple blog application backend written in Go using the Gin framework, with PostgreSQL for database management.
