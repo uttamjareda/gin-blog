@@ -6,8 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func SetupRouter() *gin.Engine {
-	router := gin.Default()
+func SetupRouter(router *gin.Engine) {
 
 	// CRUD routes for the blog
 	router.POST("/blogs", controllers.CreateBlog)
@@ -15,6 +14,4 @@ func SetupRouter() *gin.Engine {
 	router.GET("/blogs", controllers.GetAllBlogs)
 	router.PUT("/blogs/:id", controllers.UpdateBlog)
 	router.DELETE("/blogs/:id", controllers.DeleteBlog)
-
-	return router
 }
